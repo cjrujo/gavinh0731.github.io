@@ -1,21 +1,9 @@
 /** * vscode-markdown.css */
+/* 標題 */
 h1, h2, h3, h4, h5, h6, p, blockquote { margin: 0; padding: 0;}
-body {
-  font-family: 'Playfair Display', 'Gayathri', Georgia, Times, "PingFang SC", "Hiragino Sans GB", 
-  -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 
-  Helvetica, system-ui, 'Ubuntu', 'Droid Sans', Arial, sans-serif !important;
-  padding: 1em; margin: auto; max-width: 42em; color: #737373; 
-  background-color: white; margin: 10px 13px 10px 13px;}
-table { margin: 10px 0 15px 0; border-collapse: collapse;}
-td, th { border: 1px solid #ddd; padding: 3px 10px;}
-th { padding: 5px 10px; }
-a { color: #0069d6; }
-a:hover { color: #0050a3; text-decoration: none;}
-a img { border: none; }
-p { margin-bottom: 9px; }
 h1, h2, h3, h4, h5, h6 { 
-  font-family: 'Merriweather', 'Long Cang', inherit !important; /*font-variant: small-caps;*/
-  color: #404040; line-height: 36px;}
+font-family: 'Fira Code', 'Consolas', 'Long Cang', inherit !important; /*font-variant: small-caps;*/
+}
 h1 { margin-bottom: 18px; font-size: 30px; }
 h2 { font-size: 24px; }
 h3 { font-size: 18px; }
@@ -24,42 +12,58 @@ h5 { font-size: 14px; }
 h6 { font-size: 13px; }
 
 h1 {
-    color: rgb(255, 0, 0)
-  }
+  color: rgb(255, 0, 0)
+}
 
-  h2 {
-    color: #9A640C
-  }
+h2 {
+color: #9A640C
+}
 
-  h3 {
-    color: rgb(0, 158, 34)
-  }
+h3 {
+color: rgb(0, 158, 34)
+}
 
-  h4 {
-    color: rgb(0, 0, 255)
-  }
+h4 {
+color: rgb(0, 0, 255)
+}
 
-  h5, h6, pre {
-    color: rgb(162, 0, 255)
-  }
-  
+h5, h6, pre {
+color: rgb(162, 0, 255)
+}
+
+body {
+font-family: 'Fira Code', 'Consolas', 'Playfair Display', 'Gayathri', Georgia, Times, "PingFang SC", "Hiragino Sans GB", 
+-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 
+Helvetica, system-ui, 'Ubuntu', 'Droid Sans', Arial, sans-serif !important;}
+table { margin: 10px 0 15px 0; border-collapse: collapse;}
+td, th { border: 1px solid #ddd; padding: 3px 10px;}
+th { padding: 5px 10px; }
+a { color: #0069d6; }
+a:hover { color: #0050a3; text-decoration: none;}
+a img { border: none; }
+p { margin-bottom: 9px; }
+
+
 hr { margin: 0 0 19px; border: 0; border-bottom: 1px solid #ccc;}
 blockquote{ color:#666666; margin:0; padding-left: 3em; border-left: 0.5em #EEE solid; font-family: "STKaiti", georgia, serif;}
+
+/* code只顯示單行編程代碼； pre則是顯示一大段編程代碼，而且會保留原文本中的空格和換行*/
 code, pre {
-  font-family: 'Overpass', 'Cascadia Code', Monaco, 'Andale Mono', Consolas, 
-  "Lucida Console", 'Courier New', courier, monospace !important;
-  font-size: 12px;}
-code { background-color: #ffffe0; border: 1px solid orange; color: rgba(0, 0, 0, 0.75); padding: 1px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
-pre { display: block; background-color: #f8f8f8;  border: 1px solid #2f6fab; border-radius: 3px; overflow: auto; padding: 14px; white-space: pre-wrap; word-wrap: break-word;}
+font-family: 'Fira Code', 'Consolas', 'Overpass', 'Cascadia Code', Monaco, 'Andale Mono', Consolas, 
+"Lucida Console", 'Courier New', courier, monospace !important;
+font-size: 12px;}
+code { background-color: #ffffe0; border: 1px solid orange; color: rgba(0, 0, 0, 1.0); padding: 1px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+pre { display: block; background-color: #FAFAFA;  border: 1px solid #2f6fab; border-radius: 3px; overflow: auto; padding: 14px; white-space: pre-wrap; word-wrap: break-word;}
 pre code { background-color: inherit; border: none;  padding: 0;}
+
 sup { font-size: 0.83em; vertical-align: super; line-height: 0;}
 * { -webkit-print-color-adjust: exact;}
 
-body {background-color: #f1f2f3;}
+body {background-color: #C8EFD4;}
 @media screen and (min-width: 914px) { 
-  body { width: 854px; margin: 10px auto; background-color: #f1f2f3; }
+body { width: 854px; margin: 10px auto; background-color: #C8EFD4; }
 }
 @media print { 
-  body, code, pre code, h1, h2, h3, h4, h5, h6 { color: black; background-color: #f1f2f3; } 
-  table, pre { page-break-inside: avoid; }
+body, code, pre code, h1, h2, h3, h4, h5, h6 { color: black; background-color: #f1f2f3; } 
+table, pre { page-break-inside: avoid; }
 }
